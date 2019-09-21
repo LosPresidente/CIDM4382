@@ -9,7 +9,7 @@ var usersRouter = require('./app_server/routes/users');
 
 var app = express();
 
-// view engine setup
+// view engine setup ub 
 app.set('views', path.join(__dirname,'app_server', 'views'));
 app.set('view engine', 'pug');
 
