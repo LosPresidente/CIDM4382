@@ -1,6 +1,14 @@
+//- this is the mixin page that pug uses as functions
 mixin outputRating(rating)
   small &nbsp;
     - for (let i = 1; i <= rating; i++)
       i.fas.fa-star
     - for (let i = rating; i < 5; i++)
       i.far.fa-star
+
+mixin paragraphShading(rating)
+  small &nbsp;
+    -if(rating < 3)
+      p lower than 3
+    -if(rating >= 3)
+      p higher than 3

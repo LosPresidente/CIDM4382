@@ -1,0 +1,69 @@
+extends layout
+
+block content
+  .row.banner
+    .col-12
+      h1 Loc8r
+        small &nbsp;Find pizza places near you !
+
+  .row
+    .col-12.col-md-8
+      .karta4
+        .card-block
+          h4
+            a(href='/pizzadetails') Dominos
+            small &nbsp;
+              i.fas.fa-star
+              i.fas.fa-star
+              i.fas.fa-star
+              i.fas.fa-star
+              i.far.fa-star
+            span.badge.badge-pill.badge-default.float-right 0.6 miles
+          p.address 301 N 23rd St Ste B, Canyon, TX 79015
+          .facilities
+            span.badge.badge-warning Good Pizza
+            span.badge.badge-warning Great Location
+            span.badge.badge-warning Bathroom
+
+    .row
+    .col-12.col-md-8
+      .karta3
+        .card-block
+          h4
+            a(href='/pizzadetails') Pizza Hut
+            small &nbsp;
+              i.fas.fa-star
+              i.fas.fa-star
+              i.fas.fa-star
+              i.far.fa-star
+              i.far.fa-star
+            span.badge.badge-pill.badge-default.float-right 0.4 miles
+          p.address 110 23rd St, Canyon, TX 79015
+          .facilities
+            span.badge.badge-warning Okay-ish Pizza
+            span.badge.badge-warning Seating available
+            span.badge.badge-warning WiFi
+
+    .row
+    .col-12.col-md-8
+      .karta5
+        .card-block
+          h4
+            a(href='/pizzadetails') La Bella Pizza
+            //-+paragraphShading(location.rating)
+            small &nbsp;
+              i.fas.fa-star
+              i.fas.fa-star
+              i.fas.fa-star
+              i.fas.fa-star
+              i.fas.fa-star
+            span.badge.badge-pill.badge-default.float-right 1 mile
+          p.address 700 23rd St, Canyon, TX 79015
+          .facilities
+            span.badge.badge-warning Best Pizza in Canyon
+            span.badge.badge-warning No seating
+            span.badge.badge-warning Do not get anything other than pizza
+  
+
+    .col-12.col-md-4
+      p.lead Looking for great pizza? Loc8r helps you find places to eat when out and about. Let Loc8r help you find the pizza place you're looking for.
