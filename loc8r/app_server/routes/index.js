@@ -1,17 +1,19 @@
-var express = require('express');
-var router = express.Router();
-const ctrlMain = require('../controllers/main');
+const express = require('express');
+const router = express.Router();
+const ctrlLocations = require('../controllers/locations');
+const ctrlOthers = require('../controllers/others');
+const ctrlMain = require('../controllers/others');
 
-/* GET home page. 
+//const homepageController = (req, res) => {res.render('index', { title: 'Express'})};
 
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+//location pages
+router.get('/', ctrlLocations.homelist);
+router.get('/location', ctrlLocations.locationInfo);
+router.get('/location/review/new', ctrlLocations.addReview);
 
-*/
-const homepageController = (req, res) => {res.render('index', { title: 'Express'})
+//other pages
 
-};
+router.get('/about', ctrlOthers.about);
 
 router.get('/', ctrlMain.index);
 
