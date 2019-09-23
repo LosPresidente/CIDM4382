@@ -9,7 +9,7 @@ legend {
 }
 
 .navbar {
-  background-color: 	#dd19dd;
+  background: linear-gradient(90deg, rgba(249,26,225,1) 0%, rgba(249,247,23,1) 41%, rgba(0,18,255,1) 100%);
   border-color: 	#8B008B;
 }
 
@@ -24,17 +24,17 @@ legend {
 }
 /* karta 3,4,5 are to change the color of the items in the list */
 .karta3 {
-  background-color: #0645f5;
+  background: linear-gradient(180deg, rgba(11,20,246,1) 0%, rgba(19,250,2,1) 100%);
   padding: 1rem;
 }
 
 .karta4 {
-  background-color: #6c00c5;
+  background: linear-gradient(0deg, rgba(11,20,246,1) 0%, rgba(250,243,2,1) 100%);
   padding: 1rem;
 }
 
 .karta5 {
-  background-color: #da0091;
+  background: linear-gradient(0deg, rgba(246,11,233,1) 0%, rgba(19,250,2,1) 100%);
   padding: 1rem;
 }
 
@@ -106,5 +106,6 @@ a:hover {
 body {
   font-family: "Cabin", Times, sans-serif;
   color: #fff;
-  background-color: rgb(142, 228, 109);
+  background: linear-gradient(90deg, rgba(49,249,26,1) 0%, rgba(247,245,16,1) 41%, rgba(0,18,255,1) 100%);
+;
 }
