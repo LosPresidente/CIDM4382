@@ -1,0 +1,33 @@
+extends layout
+
+block content
+    .row
+        .col-12.col-md-8
+            .container
+                .row
+                .col
+                    h1.text-center ZAB Arrivals
+                    form(action='arrivals', method='POST')
+                        select(name='selectedAirport')
+                            each airport in airports
+                                option(value=airport) #{airport}
+                        input(type='submit', value='Submit')
+                        //this #{} inserts variable directly into the page
+                    p #{selectedAirport}
+                    p #{message}
+
+                .row
+                    .col
+                        .table-responsive
+                        table.table.table-sm.table-hover
+                            thead
+                                tr
+                                    th Summary
+                                    th Departure
+                                    th Arrival
+                                    th Logon Time
+                            tbody
+                                each weather in airports
+                                    tr
+                                        td #{weather.summary}
+
