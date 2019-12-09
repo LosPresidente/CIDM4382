@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    .row
+        .col-12.col-md-8
+            .container
+                .row
+                .col
+                    h1.text-center Prague Clear Weather  
+                table.table.table-sm.table-hover
+                            thead
+                                tr
+                                    th Time
+                                    th Summary
+                                    th Rain
+                                    th Temperature 
+                                    th Wind Speed
+                            tbody
+                                each forecast in forecasts
+                                    tr 
+                                        - var myDate = new Date(forecast.time*1000); number = (myDate.toGMTString());
+                                        td #{number}
+                                        td #{forecast.summary}
+                                        td #{forecast.rain}
+                                        td #{forecast.temp} *F
+                                        td #{forecast.wind} mph

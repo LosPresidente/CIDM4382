@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css') 
+    link(rel='stylesheet', href='/stylesheets/sticky-footer-navbar.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  script(type='text/javascript').
+      const foo = 1575473460;
+  body
+    nav.navbar.navbar-expand-lg.navbar-dark.fixed-top.bg-dark
+      a.navbar-brand(href='/') Weather
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href='/')
+              | Home 
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='departures') Departures
+          li.nav-item
+            a.nav-link(href='arrivals') Arrivals      
+          li.nav-item
+            a.nav-link(href='all') Prague   
+        
+
+    .container.content
+      block content
+
+  .footer
+    .container
+        span.text-muted &copy; CIDM 4382 Final Project - Ian Bilek #{new Date().getFullYear()}
+    
+  block scripts
